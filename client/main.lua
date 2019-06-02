@@ -186,7 +186,7 @@ function OpenVehicleSpawnerMenu()
 			end)
 		end, 'taxi')
 
-	else -- not society vehicles
+	else -- não ha veículos da sociedade
 
 		ESX.UI.Menu.Open('default', GetCurrentResourceName(), 'vehicle_spawner',
 		{
@@ -348,7 +348,7 @@ function IsInAuthorizedVehicle()
 			return true
 		end
 	end
-	
+
 	return false
 end
 
@@ -511,7 +511,7 @@ Citizen.CreateThread(function()
 	EndTextCommandSetBlipName(blip)
 end)
 
--- Enter / Exit marker events, and draw markers
+-- Entrar / Saia de eventos de marcadores e desenhe marcadores
 Citizen.CreateThread(function()
 	while true do
 		Citizen.Wait(0)
@@ -552,7 +552,7 @@ Citizen.CreateThread(function()
 	end
 end)
 
--- Taxi Job
+-- Trabalho De Táxi
 Citizen.CreateThread(function()
 	while true do
 
@@ -719,7 +719,7 @@ Citizen.CreateThread(function()
 	end
 end)
 
--- Key Controls
+-- Controles Chave
 Citizen.CreateThread(function()
 	while true do
 		Citizen.Wait(0)

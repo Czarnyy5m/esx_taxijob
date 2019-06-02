@@ -1,35 +1,35 @@
 # esx_taxijob
 
-## Requirements
+## Requisitos
 
-* Auto mode
-  * [esx_service](https://github.com/ESX-Org/esx_service)
-  
-* Player management (billing and boss actions)
-  * [esx_society](https://github.com/ESX-Org/esx_society)
-  * [esx_billing](https://github.com/ESX-Org/esx_billing)
+* Modo automático
+  * [esx_service](https://github.com/ESX-Brasil/esx_service)
 
-## Download & Installation
+* Gerenciamento de jogadores (ações de cobrança e chefe)
+  * [esx_society](https://github.com/ESX-Brasil/esx_society)
+  * [esx_billing](https://github.com/ESX-Brasil/esx_billing)
 
-### Using [fvm](https://github.com/qlaffont/fvm-installer)
+## Download e Instalação
+
+### Usando [fvm](https://github.com/qlaffont/fvm-installer)
 ```
-fvm install --save --folder=esx esx-org/esx_taxijob
+fvm install --save --folder=esx ESX-Brasil/esx_taxijob
 ```
 
-### Using Git
+### Usando o Git
 ```
 cd resources
-git clone https://github.com/ESX-Org/esx_taxijob [esx]/esx_taxijob
+git clone https://github.com/ESX-Brasil/esx_taxijob [esx]/esx_taxijob
 ```
 
-### Manually
-- Download https://github.com/ESX-Org/esx_taxijob/archive/master.zip
-- Put it in the `[esx]` directory
+### Manualmente
+- Download https://github.com/ESX-Brasil/esx_taxijob/archive/master.zip
+- Coloque-o no diretório `[esx]`
 
-## Installation
-- Import `esx_taxijob.sql` in your database
-- If you want player management you have to set `Config.EnablePlayerManagement` to `true` in `config.lua`
-- Add this to your `server.cfg`:
+## Instalação
+- Importe `esx_taxijob.sql` em seu banco de dados
+- Se você quer o gerenciamento de jogadores, você precisa configurar `Config.EnablePlayerManagement` para` true` em `config.lua`
+- Adicione isto ao seu `server.cfg`:
 ```
 start esx_taxijob
 ```
